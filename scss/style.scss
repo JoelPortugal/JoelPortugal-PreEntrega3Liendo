@@ -59,7 +59,7 @@ body{
           padding: 20px;
           text-align: center;
           margin-top: 0;
-          margin-bottom: 1rem;
+          margin-bottom: 0rem;
           font-family: 'Playfair Display', serif;
 
           h2{@include estilos-texto-2(16px, center, white)}
@@ -409,6 +409,55 @@ h6{@include estilos-texto-2 (20px, center, white)}
     margin: 5px;
     padding: 10px;
   }
+}
+
+.galeria-specs{background-color: #000000;
+  h3{
+    color: whitesmoke;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+}
+.specs-general {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0rem;
+
+  h2{
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+  p{
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+}
+
+.specs-column {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.specs-column:last-child {
+  border-right: none;
+}
+
+.specs-bordes{
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  
+}
+.body-modelos{
+  background-color: #000000;
 }
 
 }
