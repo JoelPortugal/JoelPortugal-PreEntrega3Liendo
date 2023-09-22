@@ -31,8 +31,8 @@
 
         @include mobile {
 
-            h1{@include estilos-texto(1.5rem, center, whitesmoke, 0rem 3rem 1rem 3rem, 0)}
-            h2{@include estilos-texto(1.5rem, left, whitesmoke, 1.5rem 3rem 1.5rem 3rem , 0)}
+            h1{@include estilos-texto(1.5rem, center, whitesmoke, 0rem 1rem 1rem 3rem, 0)}
+            h2{@include estilos-texto(1.5rem, left, whitesmoke, 1.5rem 1rem 1.5rem 3rem , 0)}
         }
   
   }
