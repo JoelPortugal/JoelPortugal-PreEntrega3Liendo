@@ -1,0 +1,49 @@
+/*footer*/
+
+footer{@include footer-bg}
+
+footer{
+        h2{@include estilos-texto(3rem, center, whitesmoke, 2rem 0 2rem 0, 0)}
+
+        p{@include estilos-texto(1rem, center, whitesmoke, 5rem, 0)}
+
+        p{text-decoration:underline;}
+
+              .lista-contactos{@include lista}
+
+              .lista-contactos{
+              
+                      li{display: inline;
+                              
+                              a{@include estilos-texto(5rem, left, whitesmoke, 2rem, 0)}
+
+                              a:hover{color: $color-hover-navbar;}
+                      }
+                }
+
+        @include tablet{
+
+                h2{@include estilos-texto(2rem, center, whitesmoke, 1.5rem 0 2rem 0, 0)}
+                p{@include estilos-texto(1rem, center, whitesmoke, 4rem, 0)}
+                
+                .lista-contactos{
+
+                        li{
+                                a{font-size: 3rem;}}
+                        
+                }
+        }
+
+        @include mobile{
+
+                h2{@include estilos-texto(1.5rem, center, whitesmoke, 1.5rem 0 1.5rem 0, 0)}
+                p {@include estilos-texto(1rem, center, whitesmoke, 3rem, 0)}
+
+                .lista-contactos{
+                                
+                                li{
+                                        a{font-size: 2rem;}
+                                }
+                }
+        }
+}

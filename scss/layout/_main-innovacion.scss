@@ -1,0 +1,52 @@
+
+/*MAIN DE PAGINA INNOVACIÓN*/
+
+.innovacion-general{@include bg-radial}
+  
+.innovacion-general{
+
+      .img-oliver{  
+            img {@include img-oliver}
+            }
+      
+    .avances-innovadores{
+  
+          padding: 1rem 10rem;  
+          h1{@include estilos-texto (2.5rem, center, $color-titulos, 5rem, 0 )}
+          p {@include estilos-texto (1.5rem, justify, $color-parrafos, 0, 0 0 3rem 0)}
+          h6{@include estilos-texto-2 (1.5rem, center, $color-titulos)}
+          h4{@include estilos-texto-2 (2rem, left, $color-titulos)}   
+
+                        @include tablet{
+
+                              padding: 1rem 5rem;  
+
+                              h1{@include estilos-texto (1.5rem, center, $color-titulos, 3rem, 0 )}
+
+                              p {@include estilos-texto (1.2rem, justify, $color-parrafos, 0, 0 0 2.5rem 0)}
+
+                              h6{@include estilos-texto-2 (1rem, center, $color-titulos)}
+
+                              h4{@include estilos-texto-2 (1.5rem, left, $color-titulos)}  
+
+                        }
+
+                        @include mobile {
+                              
+                              padding: 1rem 3rem;  
+
+                              h1{@include estilos-texto(1.4rem, center, $color-titulos, 3rem, 0 )}
+
+                              p {@include estilos-texto-2(1.1rem, justify, $color-parrafos)}
+
+                              h6{@include estilos-texto-2(0.8rem, center, $color-titulos)}
+
+                              h4{@include estilos-texto-2(1.25rem, left, $color-titulos)}
+
+                              .parrafo-extra{
+
+                                    display: none;
+                              }   
+                        }
+    }
+}

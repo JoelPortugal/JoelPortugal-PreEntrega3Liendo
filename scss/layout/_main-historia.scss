@@ -1,0 +1,59 @@
+/*MAIN DE PAGINA HISTORIA*/
+
+.main-historia {@include bg-radial}
+
+.main-historia {
+
+        h1{@include estilos-texto (3rem, center, $color-titulos, 1rem 8rem, 0)}
+
+                .origen, .origen-2, .origen-3, .origen-4 {@include display (flex, column, 1rem 8rem, 0)}
+
+                .origen, .origen-2, .origen-3, .origen-4 {
+                  align-items: center;
+                  text-align: center;
+
+                           p{@include estilos-texto (1.5rem, justify, $color-parrafos, 0, 0 0 1rem 0)}
+                              
+                              img {@include img (80%, auto, 0, 1rem 0 2rem 0, 1rem, 0)}
+
+                              h1 {@include estilos-texto (3rem, left, $color-titulos, 1rem 8rem, 0)}
+
+    }
+
+        @include tablet{
+          
+          h1{@include estilos-texto(2.5rem, left, whitesmoke, 1rem 0rem 1rem 4rem, 0)}
+
+          .origen, .origen-2, .origen-3, .origen-4{
+            padding: 1rem 4rem 1rem 4rem;
+
+              p{font-size: 1.2rem;}
+
+              img{
+                max-width: 100%;
+              }
+          }
+        }
+
+
+        @include mobile{
+
+          h1{@include estilos-texto(2rem, left, whitesmoke, 1rem 0rem 0.5rem 3rem, 0)}
+
+          .origen, .origen-2, .origen-3, .origen-4{
+            padding: 1rem 3rem 1rem 3rem;
+
+              p{font-size: 1.2rem;}
+
+              img{
+                max-width: 100%;
+              }
+
+              .parrafo-extra{
+                display: none;
+              }
+          }
+
+        }
+       
+  }

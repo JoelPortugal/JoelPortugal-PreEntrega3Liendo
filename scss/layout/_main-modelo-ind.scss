@@ -1,0 +1,32 @@
+/*MAIN INDIVIDUAL DE CADA MODELO*/
+
+.galeria-specs{
+
+    h3 {@include estilos-texto (2rem, center, $color-titulos, 0, 3rem);}
+
+    h1 {@include estilos-texto (3rem, center, $color-titulos, 1rem 0rem 2rem 0rem, 0);}
+
+    h5 {@include estilos-texto-2(5rem, center, $color-titulos);}
+
+    p {@include estilos-texto-2(2.5rem, center, $color-titulos);}
+
+    .specs-bordes{@include bg-radial}
+
+    .specs-bordes{
+
+        padding: 2rem;
+        
+            .specs-general{
+
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0rem;
+
+                        h2 {@include estilos-texto-2(1rem, center, $color-titulos);}
+
+                        p {@include estilos-texto-2(2rem, center, $color-titulos);}
+
+                                .specs-column {@include specs-column}
+    }
+  }
+}

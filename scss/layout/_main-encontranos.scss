@@ -1,0 +1,80 @@
+/*MAIN DEL ENCONTRANOS*/
+
+.main-encontranos{@include bg-radial}
+
+.main-encontranos{@include display(flex, column, 0rem 5rem, 0)}
+
+.main-encontranos{
+
+    .mapa-texto{@include display (flex, row, 0, 2rem)}
+
+          .mapa-texto{
+
+                  iframe{@include img (100%, 25rem, 0, 0, 0, 1)}
+                  
+                  h1{@include estilos-texto (3rem, right, $color-titulos, 0, 0)}
+                  h1{flex: 1;}
+          }
+  
+          .concesionario-texto{@include display (flex, row, 0, 2rem)}
+
+          .concesionario-texto{
+
+                      img{@include img (100%, 25rem, 0, 0, 0, 1)}
+
+                      h1{@include estilos-texto(2rem, left, $color-titulos, 0, 0 1rem 0 0,)}
+
+                      h1{flex: 1;}
+          }
+  }
+
+
+.main-encontranos{
+
+  @include tablet {
+
+    padding: 0rem 2rem;
+
+          .mapa-texto {
+
+            flex-direction: column;
+
+                    iframe {@include img (100%, 25rem, 0, 0, 0, 1)}
+                    
+                    h1 {@include estilos-texto-2(1.5rem, justify, $color-titulos)}
+          }
+    
+          .concesionario-texto {
+            flex-direction: column;
+            align-items: center;
+
+                    img{@include img (100%, auto, 0, 0 0 1rem 0, 0, none)}
+                    
+                    h1{@include estilos-texto (1.5rem, justify, $color-titulos, 0, 0 0 2rem 0,)}
+          }
+  }
+}
+
+.main-encontranos{
+
+    @include mobile{
+
+      .concesionario-texto{
+        h1{
+          font-size: 1.2rem;
+        }
+      }
+
+      .mapa-texto{
+
+        iframe{
+          height: 12.5rem;
+        }
+
+        h1{
+          font-size: 1.2rem;
+        }
+      }
+      
+  }
+}

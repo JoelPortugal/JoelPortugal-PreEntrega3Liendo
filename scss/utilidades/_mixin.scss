@@ -2,6 +2,81 @@
 
 //mixin con parametros
 
+@mixin grid-layout($columnas) {
+    display: grid;
+    grid-template-columns: repeat(#{$columnas}, 1fr);
+  }
+
+@mixin bg-radial{
+    background-image: radial-gradient($color-secundario, $color-principal);
+}
+
+@mixin footer-bg{
+    background-image: linear-gradient( $color-principal, $color-2-footer);
+}
+
+@mixin lista{
+    list-style: none;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 6rem;
+}
+
+@mixin menu-img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    &:hover{
+        filter: grayscale(90%);
+        }
+}
+
+@mixin img-oliver{
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+}
+
+@mixin specs-column{
+    flex: 1;
+    text-align: center;
+    border-right: 1rem;
+    padding: 1rem;
+
+    &:last-child{
+                 border-right: none;
+                }
+}
+
+@mixin display-modelos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image:radial-gradient(rgb(28, 9, 41), rgb(0, 0, 0));
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+@mixin row-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+
+
+
+//mixin sin parametros
+
+
 @mixin estilos-texto ($font-size, $text-align, $color, $padding, $margin) {
     font-size: $font-size ;
     text-align: $text-align ;
@@ -10,34 +85,24 @@
     margin: $margin;
 }
 
-@mixin estilo-imagenes ($width, $max-width, $height) {
-    width:$width ;
-    max-width:$max-width ;
-    height:$height ;
-}
-
-@mixin estilo-imagenes-2 ($width, $height, $margin) {
-    width:$width ;
-    height:$height ;
-    margin: $margin;
-}
-
-
 @mixin estilos-texto-2 ($font-size, $text-align, $color) {
     font-size: $font-size ;
     text-align: $text-align ;
     color: $color;
 }
 
-@mixin display-flex ($display, $flex-direction, $align-items) {
+@mixin display ($display, $flex-direction, $padding, $margin) {
     display: $display;
     flex-direction: $flex-direction;
-    align-items: $align-items;
+    padding: $padding;
+    margin: $margin;
 }
 
-
-
-
-
-
-//mixin sin parametros
+@mixin img ($max-width, $height, $padding, $margin, $border-radius, $flex) {
+    max-width: $max-width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+    border-radius: $border-radius;
+    flex: $flex;
+}

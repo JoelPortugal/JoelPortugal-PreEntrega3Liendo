@@ -1,0 +1,35 @@
+/*NAVBAR*/
+
+.navbar {
+  background-color: $color-principal !important;
+ }
+  
+  @include tablet{
+
+    .navbar{
+      padding-left: 1rem;
+    }
+  }
+
+  .navbar-nav {
+
+        .nav-link {
+          color: $color-titulos;
+        }
+
+        .nav-item{
+
+          .nav-link:hover{
+
+            color: $color-hover-navbar;
+          }
+        }
+
+        .bg-body-tertiary{
+          
+            background-color: $color-principal !important;
+        }
+
+}
+  
+  

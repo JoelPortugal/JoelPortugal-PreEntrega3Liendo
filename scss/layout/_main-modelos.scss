@@ -1,0 +1,52 @@
+/*MAIN DE PAGINA MODELOS*/
+
+.main-de-modelos-2 {@include display-modelos}
+
+.main-de-modelos-2{
+
+        .col-md-4 {padding: 3rem 5rem 3rem 5rem;}
+
+            h3{@include estilos-texto(3rem, center, $color-titulos, 2rem 2rem 1rem 2rem, 2rem 0 1rem 0)}
+            h1{ @include estilos-texto(3rem, center, $color-titulos, 2rem 1rem 0rem 1rem, 0rem)}
+
+        .black-bg-card{
+
+                background-color: black;
+                align-items: center;
+
+                    h5 {@include estilos-texto-2(2rem, center, $color-titulos)}
+
+                    p {@include estilos-texto-2(2rem, center, $color-titulos)}
+
+            }
+
+}
+
+@include tablet{
+
+    .main-de-modelos-2 {
+
+      h3 {@include estilos-texto(2rem, center, $color-titulos, 2rem 2rem 0rem 2rem, 2rem 0 1rem 0)}
+
+      h1{ @include estilos-texto(2rem, center, $color-titulos, 2rem 1rem 0rem 1rem, 0rem)}
+
+    }
+
+    .row {@include row-display}
+
+    .col-md-4 {
+        flex: 0 0 calc(50% - 20px);
+        margin: 0.5rem;
+        padding: 1rem;
+    } 
+}
+
+
+ @include mobile{
+
+    .main-de-modelos-2{
+
+      h3{@include estilos-texto(1.5rem, center, $color-titulos, 2rem 2rem 0rem 2rem, 2rem 0 1rem 0)}
+      h1{ @include estilos-texto(1.5rem, center, $color-titulos, 2rem 1rem 0rem 1rem, 0rem)}
+    }      
+}

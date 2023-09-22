@@ -1,0 +1,38 @@
+/*MAIN DEL INDEX*/
+
+.main-index{
+
+    .section-vehiculos{@include bg-radial}
+  
+    h5{@include estilos-texto-2(3rem, center, whitesmoke)}
+    p {@include estilos-texto-2(2rem, center, whitesmoke)}
+    h1{@include estilos-texto(3rem, center, whitesmoke, 0rem 3rem 2rem 3rem, 0)}
+    h2{@include estilos-texto(3rem, left, whitesmoke, 2rem, 0)}
+  
+        .menu-imagenes{@include grid}
+
+        .menu-imagenes{
+
+              a{
+                  img { @include menu-img }
+              }
+                                 
+        }
+  
+    
+        @include tablet {
+
+              h1{@include estilos-texto(2rem, center, whitesmoke, 0rem 3rem 1rem 3rem, 0)}
+              h2{@include estilos-texto(2rem, left, whitesmoke, 1.5rem 3rem 1.5rem 3rem , 0)}
+
+          .menu-imagenes {
+              @include grid-layout(2);}
+        }
+
+        @include mobile {
+
+            h1{@include estilos-texto(1.5rem, center, whitesmoke, 0rem 3rem 1rem 3rem, 0)}
+            h2{@include estilos-texto(1.5rem, left, whitesmoke, 1.5rem 3rem 1.5rem 3rem , 0)}
+        }
+  
+  }
